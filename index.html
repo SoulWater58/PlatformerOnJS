@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Платформер</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+
+        <!-- Главное меню -->
+        <div class="menu menu_start">
+            <h1>Платформер</h1>
+            <h2>Управление: A/D и W</h2>
+            <h2>Выбери уровень</h2>
+            <button type="button" class="level" value="1">Уровень 1</button>
+            <button type="button" class="level" value="2">Уровень 2</button>
+            <button type="button" class="level" value="3">Уровень 3</button>
+        </div>
+
+        <!-- Меню победы -->
+        <div class="menu menu_end">
+            <h1>Ты победил!</h1>
+            <h2 class="timer">Твое время:</h2>
+            <button type="button" class="restart" value="1">Выбрать другой уровень</button>
+        </div>
+
+        <!-- Кнопка выхода в меню -->
+        <button class="change_level" type="button">Выбрать уровень</button>
+
+        <!-- Главное окно игры -->
+        <canvas id="canvas" width="1024" height="1024"></canvas>
+
+        <script src="scripts/app.js"></script>
+    </body>
+</html>

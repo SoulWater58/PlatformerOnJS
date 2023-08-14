@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'BetterVCR';
+    src: url(../fonts/better-vcr_0.ttf);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    font-family: 'BetterVCR', sans-serif;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2e4583;
+    border-radius: 5px;
+    color: #b47ce9;
+}
+
+button:hover {
+    background-color: #283d79;
+    color: #7c43b1;
+}
+
+button:active {
+    background-color: #37529b;
+    color: #a156e7;
+}
+
+#canvas {
+    background-color: gray;
+}
+
+.menu {
+    position: fixed;
+    background-color: #432f55;
+    padding: 30px;
+    border-radius: 20px;
+    width: 468px;
+    height: 211px;
+    top: calc(50% - (0.5 * 211px));
+    left: calc(50% - (0.5 * 468px));
+}
+
+.menu h1 {
+    color: #7f57a1;
+    margin-bottom: 15px;
+}
+
+.menu h2 {
+    margin-bottom: 10px;
+}
+
+.menu_end {
+    display: none;
+}
+
+.menu_end h2 {
+    margin-bottom: 30px;
+}
+
+.change_level {
+    display: none;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    font-size: 18px;
+}
